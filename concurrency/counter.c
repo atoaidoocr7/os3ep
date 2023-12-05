@@ -17,7 +17,7 @@ int main(int argc, char * argv[]){
     pthread_t p1, p2;
 
     printf("main: begin, (counter = %d)\n", counter);
-    
+
     pthread_create(&p1, NULL, mythread, "A");
     pthread_create(&p2, NULL, mythread, "B");
 
